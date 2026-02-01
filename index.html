@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Sosial Media</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    ),
+    url("images/pp.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 30px;
+      width: 90%;
+      max-width: 380px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  margin-bottom: 15px;
+  position: relative;
+
+  animation: premiumPulse 3s infinite ease-in-out;
+  box-shadow:
+    0 0 20px rgba(255,255,255,0.6),
+    0 0 40px rgba(195,55,100,0.7),
+    0 0 60px rgba(29,38,113,0.6);
+}
+
+/* Glow berdenyut */
+@keyframes premiumPulse {
+  0% {
+    box-shadow:
+      0 0 15px rgba(255,255,255,0.5),
+      0 0 30px rgba(195,55,100,0.5),
+      0 0 45px rgba(29,38,113,0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 0 30px rgba(255,255,255,1),
+      0 0 60px rgba(195,55,100,0.9),
+      0 0 90px rgba(29,38,113,0.8);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow:
+      0 0 15px rgba(255,255,255,0.5),
+      0 0 30px rgba(195,55,100,0.5),
+      0 0 45px rgba(29,38,113,0.5);
+    transform: scale(1);
+  }
+}
+
+    h1 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 10px 0 25px;
+      opacity: 0.9;
+    }
+
+    .social-links a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255,255,255,0.15);
+      padding: 14px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .social-links a:hover {
+      background: #fff;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 15px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="images/pp.jpg" alt="Foto Profil" class="profile-img">
+
+    <h1>BillZ</h1>
+    <p>Content Creator • Traveling • Explore Wisata</p>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/arsad._._?igsh=N3gzMXZiM3NkZ3ps" target="_blank">Instagram</a>
+      <a href="https://youtube.com/@bajilakopokuwiofficial.?si=4gpiOA6NPga56Bjy" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@arbilll._._?_r=1&_t=ZS-93XNHnjz75x" target="_blank">TikTok</a>
+      <a href="https://wa.me/6285878090454" target="_blank">WhatsApp</a>
+    </div>
+
+    <footer>
+      © 2024 • BillZ
+    </footer>
+  </div>
+
+</body>
+</html>
